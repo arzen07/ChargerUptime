@@ -1,0 +1,14 @@
+/Users/arjanthapa/Projects/ChargerUptime/bin/Debug/net9.0/ChargerUptime
+/Users/arjanthapa/Projects/ChargerUptime/bin/Debug/net9.0/ChargerUptime.deps.json
+/Users/arjanthapa/Projects/ChargerUptime/bin/Debug/net9.0/ChargerUptime.runtimeconfig.json
+/Users/arjanthapa/Projects/ChargerUptime/bin/Debug/net9.0/ChargerUptime.dll
+/Users/arjanthapa/Projects/ChargerUptime/bin/Debug/net9.0/ChargerUptime.pdb
+/Users/arjanthapa/Projects/ChargerUptime/obj/Debug/net9.0/ChargerUptime.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arjanthapa/Projects/ChargerUptime/obj/Debug/net9.0/ChargerUptime.AssemblyInfoInputs.cache
+/Users/arjanthapa/Projects/ChargerUptime/obj/Debug/net9.0/ChargerUptime.AssemblyInfo.cs
+/Users/arjanthapa/Projects/ChargerUptime/obj/Debug/net9.0/ChargerUptime.csproj.CoreCompileInputs.cache
+/Users/arjanthapa/Projects/ChargerUptime/obj/Debug/net9.0/ChargerUptime.dll
+/Users/arjanthapa/Projects/ChargerUptime/obj/Debug/net9.0/refint/ChargerUptime.dll
+/Users/arjanthapa/Projects/ChargerUptime/obj/Debug/net9.0/ChargerUptime.pdb
+/Users/arjanthapa/Projects/ChargerUptime/obj/Debug/net9.0/ChargerUptime.genruntimeconfig.cache
+/Users/arjanthapa/Projects/ChargerUptime/obj/Debug/net9.0/ref/ChargerUptime.dll
