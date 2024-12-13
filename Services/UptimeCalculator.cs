@@ -23,7 +23,7 @@ public class UptimeCalculator
             });
     }
 
-    private static int CalculateStationUptime(List<ChargerAvailabilityReport> reports, List<uint> chargerIds)
+    private int CalculateStationUptime(List<ChargerAvailabilityReport> reports, List<uint> chargerIds)
     {
         if (reports.Count == 0) return 0;
 

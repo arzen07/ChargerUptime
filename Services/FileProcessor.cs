@@ -75,7 +75,7 @@ public class FileProcessor
         return stationData;
     }
 
-    private static (Station? station, string? error) ParseStationLine(string line, int lineNumber)
+    private (Station? station, string? error) ParseStationLine(string line, int lineNumber)
     {
         var parts = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
         if (parts.Length < 2)
@@ -103,7 +103,7 @@ public class FileProcessor
         return (station, null);
     }
 
-    private static (ChargerAvailabilityReport? report, string? error) ParseReportLine(string line, int lineNumber)
+    private (ChargerAvailabilityReport? report, string? error) ParseReportLine(string line, int lineNumber)
     {
         var parts = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
         if (parts.Length != 4)
@@ -138,7 +138,7 @@ public class FileProcessor
         }, null);
     }
 
-    private static string? ValidateStationData(StationData data)
+    private string? ValidateStationData(StationData data)
     {
         if (data.Stations.Count == 0)
             return "No stations found in input file.";
@@ -180,7 +180,7 @@ public class FileProcessor
             var chargerReports = reportsByCharger[chargerId].OrderBy(r => r.StartTimeNanos).ToList();
             
             // Check for overlapping time periods
-            if (HasOverlappingPeriods(chargerReports, chargerId))
+            if (HasOverlappingPeriods(chargerReports))
             {
                 return $"Overlapping time periods found for Charger ID {chargerId}";
             }
@@ -196,7 +196,7 @@ public class FileProcessor
         return null;
     }
 
-    private static bool HasOverlappingPeriods(List<ChargerAvailabilityReport> reports, uint chargerId)
+    private bool HasOverlappingPeriods(List<ChargerAvailabilityReport> reports)
     {
         var sortedReports = reports.OrderBy(r => r.StartTimeNanos).ToList();
 
